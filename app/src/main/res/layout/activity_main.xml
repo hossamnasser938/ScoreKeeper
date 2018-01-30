@@ -44,25 +44,29 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="+6 Points"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:onClick="addSixToTeamA"/>
 
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="+3 Points"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:onClick="addThreeToTeamA"/>
 
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="+2 Points"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:onClick="addTwoToTeamA"/>
 
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="+1 Points"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:onClick="addOneToTeamA"/>
 
             </LinearLayout>
 
@@ -106,25 +110,29 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="+6 Points"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:onClick="addSixToTeamB"/>
 
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="+3 Points"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:onClick="addThreeToTeamB"/>
 
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="+2 Points"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:onClick="addTwoToTeamB"/>
 
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="+1 Points"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:onClick="addOneToTeamB"/>
 
             </LinearLayout>
 
