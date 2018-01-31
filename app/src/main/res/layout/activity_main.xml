@@ -36,31 +36,35 @@
                 android:textSize="72sp" />
 
             <Button
+                android:id="@+id/add6points_teamA_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:onClick="addSixToTeamA"
+                android:onClick="respond"
                 android:text="+6 Points" />
 
             <Button
+                android:id="@+id/add3points_teamA_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:onClick="addThreeToTeamA"
+                android:onClick="respond"
                 android:text="+3 Points" />
 
             <Button
+                android:id="@+id/add2points_teamA_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:onClick="addTwoToTeamA"
+                android:onClick="respond"
                 android:text="+2 Points" />
 
             <Button
+                android:id="@+id/add1points_teamA_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:onClick="addOneToTeamA"
+                android:onClick="respond"
                 android:text="+1 Points" />
 
         </LinearLayout>
@@ -96,31 +100,35 @@
                 android:textSize="72sp" />
 
             <Button
+                android:id="@+id/add6points_teamB_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:onClick="addSixToTeamB"
+                android:onClick="respond"
                 android:text="+6 Points" />
 
             <Button
+                android:id="@+id/add3points_teamB_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:onClick="addThreeToTeamB"
+                android:onClick="respond"
                 android:text="+3 Points" />
 
             <Button
+                android:id="@+id/add2points_teamB_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:onClick="addTwoToTeamB"
+                android:onClick="respond"
                 android:text="+2 Points" />
 
             <Button
+                android:id="@+id/add1points_teamB_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:onClick="addOneToTeamB"
+                android:onClick="respond"
                 android:text="+1 Points" />
 
         </LinearLayout>
@@ -140,10 +148,11 @@
         android:layout_weight="1">
 
         <Button
+            android:id="@+id/reset_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:onClick="resetScores"
+            android:onClick="respond"
             android:text="Reset" />
 
     </RelativeLayout>

@@ -19,90 +19,57 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /*
-    **This fuction displays the score of team A
+    **This function displays either team A score or team B score
      */
-    private void displayForTeamA(int score) {
-        TextView text = (TextView) findViewById(R.id.teamA_score_text);
-        text.setText("" + score);
+    public void displayScore(TextView view , int score){
+        view.setText("" + score);
     }
 
     /*
-    **This fuction displays the score of team B
+    **This function is called when one a button is clicked
      */
-    private void displayForTeamB(int score) {
-        TextView text = (TextView) findViewById(R.id.teamB_score_text);
-        text.setText("" + score);
-    }
-
-    /*
-    **This function is called when '+6 Points' button on team A is clicked
-     */
-    public void addSixToTeamA(View view) {
-        teamAScore += 6;
-        displayForTeamA(teamAScore);
-    }
-
-    /*
-    **This function is called when '+3 Points' button on team A is clicked
-     */
-    public void addThreeToTeamA(View view) {
-        teamAScore += 3;
-        displayForTeamA(teamAScore);
-    }
-
-    /*
-    **This function is called when '+2 Points' button on team A is clicked
-     */
-    public void addTwoToTeamA(View view) {
-        teamAScore += 2;
-        displayForTeamA(teamAScore);
-    }
-
-    /*
-    **This function is called when '+1 Points' button on team A is clicked
-     */
-    public void addOneToTeamA(View view) {
-        teamAScore += 1;
-        displayForTeamA(teamAScore);
-    }
-
-    /*
-    **This function is called when '+6 Points' button on team B is clicked
-     */
-    public void addSixToTeamB(View view) {
-        teamBScore += 6;
-        displayForTeamB(teamBScore);
-    }
-
-    /*
-    **This function is called when '+3 Points' button on team B is clicked
-     */
-    public void addThreeToTeamB(View view) {
-        teamBScore += 3;
-        displayForTeamB(teamBScore);
-    }
-
-    /*
-    **This function is called when '+2 Points' button on team B is clicked
-     */
-    public void addTwoToTeamB(View view) {
-        teamBScore += 2;
-        displayForTeamB(teamBScore);
-    }
-
-    /*
-    **This function is called when '+1 Points' button on team B is clicked
-     */
-    public void addOneToTeamB(View view) {
-        teamBScore += 1;
-        displayForTeamB(teamBScore);
-    }
-
-    public void resetScores(View view){
-        teamAScore = 0;
-        teamBScore = 0;
-        displayForTeamA(teamAScore);
-        displayForTeamB(teamBScore);
+    public void respond(View view){
+        switch(view.getId())
+        {
+            case R.id.add1points_teamA_button :
+                teamAScore += 1;
+                displayScore((TextView) findViewById(R.id.teamA_score_text) , teamAScore);
+                break;
+            case R.id.add2points_teamA_button :
+                teamAScore += 2;
+                displayScore((TextView) findViewById(R.id.teamA_score_text) , teamAScore);
+                break;
+            case R.id.add3points_teamA_button :
+                teamAScore += 3;
+                displayScore((TextView) findViewById(R.id.teamA_score_text) , teamAScore);
+                break;
+            case R.id.add6points_teamA_button :
+                teamAScore += 6;
+                displayScore((TextView) findViewById(R.id.teamA_score_text) , teamAScore);
+                break;
+            case R.id.add1points_teamB_button :
+                teamBScore += 1;
+                displayScore((TextView) findViewById(R.id.teamB_score_text) , teamBScore);
+                break;
+            case R.id.add2points_teamB_button :
+                teamBScore += 2;
+                displayScore((TextView) findViewById(R.id.teamB_score_text) , teamBScore);
+                break;
+            case R.id.add3points_teamB_button :
+                teamBScore += 3;
+                displayScore((TextView) findViewById(R.id.teamB_score_text) , teamBScore);
+                break;
+            case R.id.add6points_teamB_button :
+                teamBScore += 6;
+                displayScore((TextView) findViewById(R.id.teamB_score_text) , teamBScore);
+                break;
+            case R.id.reset_button :
+                teamAScore = 0;
+                teamBScore = 0;
+                displayScore((TextView) findViewById(R.id.teamA_score_text) , teamAScore);
+                displayScore((TextView) findViewById(R.id.teamB_score_text) , teamBScore);
+                break;
+        }
     }
 
 }
