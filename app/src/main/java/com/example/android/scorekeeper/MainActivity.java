@@ -9,8 +9,8 @@ import com.example.android.scorekeeper.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    int teamAScore = 0;
-    int teamBScore = 0;
+    private int teamAScore = 0;
+    private int teamBScore = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
